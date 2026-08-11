@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas – Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <p class="header-label">Portfolio</p>
+            <h1>Amoo Anas</h1>
+            <p class="header-sub">My third Projects</p>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <img src="aaa.jpeg" class="logo" alt="Anas profile photo">
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#details">Details</a>
+            <a href="#project">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="#dashboard" class="dashboard-btn">Dashboard</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="section-tag">01 — About</div>
+            <h2>About Me</h2>
+            <p>
+                My name is Anas. I am passionate about learning web development. I have learned the basics of HTML and I am currently moving on to CSS. I enjoy building simple websites and improving my skills through practice and consistency. My goal is to become a skilled software developer in the future.
+            </p>
+        </section>
+
+        <!-- KEY DETAILS SECTION -->
+        <section id="details" class="section">
+            <div class="section-tag">02 — Details</div>
+            <h2>Key Details</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Amoo Anas</td>
+                </tr>
+                <tr>
+                    <th>Hobbies</th>
+                    <td>Coding, Exploring Technology, Problem Solving</td>
+                </tr>
+                <tr>
+                    <th>Skills</th>
+                    <td>HTML, Basic Website Structure</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><a href="mailto:amooanas0704@gmail.com">amooanas0704@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>+234 704 342 0968</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- CONTACT FORM SECTION -->
+        <!-- FIX: All inputs now have name="" attributes so PHP can read $_POST -->
+        <!-- FIX: action points to index.php, method is POST -->
+        <section id="contact" class="section">
+            <div class="section-tag">03 — Register</div>
+            <h2>Create Account</h2>
+            <form action="index.php" method="POST" class="form-card">
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" 
+                           maxlength="20" minlength="8" 
+                           placeholder="At least 8 characters" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" 
+                           maxlength="20" minlength="8" 
+                           placeholder="At least 8 characters" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" 
+                           maxlength="30" 
+                           placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="tel" id="phone_number" name="phone_number" 
+                           maxlength="15" 
+                           placeholder="+234 000 000 0000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bday">Birthday</label>
+                    <input type="date" id="bday" name="bday" required>
+                </div>
+
+                <div class="form-actions">
+                    <input type="reset" value="Clear">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Amoo Anas &mdash; Built with HTML &amp; CSS</p>
+    </footer>
+
+</body>
+</html>
